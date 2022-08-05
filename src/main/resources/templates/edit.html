@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://thymeleaf.org">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
   <title>Update user</title>
 </head>
 <body>
 <h1>Update user</h1>
-<form th:method="PATCH" th:action="@{/admin/{id}(id=${user.getId()})}" th:object="${user}">
+<form th:method="PATCH" th:action="@{/admin/{id}(id=${userEdit.getId()})}" th:object="${userEdit}">
   <label for="name">Enter name</label>
   <input type="text" th:field="*{name}" id="name">
   <br>
